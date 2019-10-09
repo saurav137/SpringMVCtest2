@@ -9,5 +9,8 @@
         <module name="teluskoTest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="teluskoTest" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

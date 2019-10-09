@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 public class Config {
     @RequestMapping ("/add")
     public ModelAndView add(HttpServletRequest request){
-        String name=request.getParameter("t1");
-        user User=new user(name);
+        String name=request.getParameter("uname");
+        String pass=request.getParameter("pass");
+        user User=new user(name,pass);
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.setViewName("display");
         modelAndView.addObject("Value",User);
